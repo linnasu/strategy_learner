@@ -1,12 +1,3 @@
-"""
-
-Project 8: Strategy Evaluation - Manual Strategy
-Student Name: Linna Su
-GT User ID: lsu63
-GT ID: 903640548
-
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -179,9 +170,6 @@ def comparePerf(symbol, sv = 100000, commission = 9.95, impact=0.05, verbose=Fal
 		print(results)
 		print('-------------------------------------------------------------------------------------------')
 
-
-def author():
-	return 'lsu63'
 
 
 if __name__ == "__main__":
