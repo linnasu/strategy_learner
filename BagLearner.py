@@ -22,13 +22,6 @@ class BagLearner(object):
         self.verbose = verbose
 
 
-    def author(self):
-        """
-        :return: The GT username of the student
-        :rtype: str
-        """
-        return "lsu63"
-
     def add_evidence(self, data_x, data_y):
         """
         Add training data to learner
@@ -61,8 +54,6 @@ class BagLearner(object):
 
         return stats.mode(results, axis=1)[0]
 
-def author():
-    return 'lsu63'
 
 if __name__ == "__main__":
     print("This is Bag Learner'")
