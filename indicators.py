@@ -1,12 +1,3 @@
-"""
-
-Project 6: Indicator Evaluation
-Student Name: Linna Su
-GT User ID: lsu63
-GT ID: 903640548
-
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -195,6 +186,3 @@ def OBV(symbol, sd, ed, lookback, verbose=False):
 
 	return obv_change
 
-
-def author():
-	return 'lsu63'
