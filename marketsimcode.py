@@ -1,12 +1,3 @@
-"""
-
-Project 6: Indicator Evaluation
-Student Name: Linna Su   		  	   		   	 			  		 			 	 	 		 		 	
-GT User ID: lsu63  		  	   		   	 			  		 			 	 	 		 		 	
-GT ID: 903640548
-
-"""
-  		  	   		   	 			  		 			 	 	 		 		 	
 import numpy as np
 import pandas as pd  		  	   		   	 			  		 			 	 	 		 		 	
 from util import get_data
@@ -122,10 +113,6 @@ def test_code(df_trades):
     #print(f"Average Daily Return of SPY : {avg_daily_ret_SPY}")
     print()  		  	   		   	 			  		 			 	 	 		 		 	
     print(f"Final Portfolio Value: {portvals[-1]}")
-
-def author():
-	return 'lsu63'
-
 
 if __name__ == "__main__":  		  	   		   	 			  		 			 	 	 		 		 	
     test_code()  		  	   		   	 			  		 			 	 	 		 		 	
