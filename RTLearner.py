@@ -4,7 +4,7 @@ from scipy import stats
 
 class RTLearner(object):
     """
-    This is a Random Tree Learner. It is implemented correctly.
+    This is a Random Tree Learner.
 
     :param verbose: If “verbose” is True, your code can print out information for debugging.
         If verbose = False your code should not generate ANY output. When we test your code, verbose will be False.
@@ -19,12 +19,6 @@ class RTLearner(object):
         self.verbose = verbose
         self.tree = None
 
-    def author(self):
-        """
-        :return: The GT username of the student
-        :rtype: str
-        """
-        return "lsu63"
 
     def add_evidence(self, data_x, data_y):
         """
@@ -66,7 +60,7 @@ class RTLearner(object):
 
     def query(self, points):
         """
-        Estimate a set of test points given the model we built.
+        Estimate a set of test points given the model built.
 
         :param points: A numpy array with each row corresponding to a specific query.
         :type points: numpy.ndarray
@@ -83,7 +77,7 @@ class RTLearner(object):
 
     def search_tree(self, x):
         """
-        Estimate predicted value for one data point given the model we built.
+        Estimate predicted value for one data point given the model built.
         """
         if self.tree[0, 0] == -1:
             return self.tree[0, 1]
@@ -104,8 +98,6 @@ class RTLearner(object):
                         leaf = True
             return self.tree[i, 1]
 
-def author():
-    return 'lsu63'
 
 if __name__ == "__main__":
     print("This is Random Tree Learner")
