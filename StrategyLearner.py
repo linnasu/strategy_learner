@@ -1,33 +1,3 @@
-""""""  		  	   		   	 			  		 			 	 	 		 		 	
-"""  		  	   		   	 			  		 			 	 	 		 		 	
-Template for implementing StrategyLearner  (c) 2016 Tucker Balch  		  	   		   	 			  		 			 	 	 		 		 	
-  		  	   		   	 			  		 			 	 	 		 		 	
-Copyright 2018, Georgia Institute of Technology (Georgia Tech)  		  	   		   	 			  		 			 	 	 		 		 	
-Atlanta, Georgia 30332  		  	   		   	 			  		 			 	 	 		 		 	
-Atlanta, Georgia 30332  		  	   		   	 			  		 			 	 	 		 		 	
-All Rights Reserved  		  	   		   	 			  		 			 	 	 		 		 	
-  		  	   		   	 			  		 			 	 	 		 		 	
-Template code for CS 4646/7646  		  	   		   	 			  		 			 	 	 		 		 	
-  		  	   		   	 			  		 			 	 	 		 		 	
-Georgia Tech asserts copyright ownership of this template and all derivative  		  	   		   	 			  		 			 	 	 		 		 	
-works, including solutions to the projects assigned in this course. Students  		  	   		   	 			  		 			 	 	 		 		 	
-and other users of this template code are advised not to share it with others  		  	   		   	 			  		 			 	 	 		 		 	
-or to make it available on publicly viewable websites including repositories  		  	   		   	 			  		 			 	 	 		 		 	
-such as github and gitlab.  This copyright statement should not be removed  		  	   		   	 			  		 			 	 	 		 		 	
-or edited.  		  	   		   	 			  		 			 	 	 		 		 	
-  		  	   		   	 			  		 			 	 	 		 		 	
-We do grant permission to share solutions privately with non-students such  		  	   		   	 			  		 			 	 	 		 		 	
-as potential employers. However, sharing with other current or future  		  	   		   	 			  		 			 	 	 		 		 	
-students of CS 7646 is prohibited and subject to being investigated as a  		  	   		   	 			  		 			 	 	 		 		 	
-GT honor code violation.  		  	   		   	 			  		 			 	 	 		 		 	
-  		  	   		   	 			  		 			 	 	 		 		 	
------do not edit anything above this line---  		  	   		   	 			  		 			 	 	 		 		 	
-  		  	   		   	 			  		 			 	 	 		 		 	
-Student Name: Linna Su   		  	   		   	 			  		 			 	 	 		 		 	
-GT User ID: lsu63  		  	   		   	 			  		 			 	 	 		 		 	
-GT ID: 903640548 		  	   		   	 			  		 			 	 	 		 		 	
-"""  		  	   		   	 			  		 			 	 	 		 		 	
-
 import numpy as np
 import pandas as pd
 import datetime as dt  		  	   		   	 			  		 			 	 	 		 		 	
@@ -61,7 +31,7 @@ class StrategyLearner(object):
         self.learner = None
 
   		  	   		   	 			  		 			 	 	 		 		 	
-    # this method should create a QLearner, and train it for trading  		  	   		   	 			  		 			 	 	 		 		 	
+    # this method create a strategy learner, and train it for trading  		  	   		   	 			  		 			 	 	 		 		 	
     def add_evidence(  		  	   		   	 			  		 			 	 	 		 		 	
         self,  		  	   		   	 			  		 			 	 	 		 		 	
         symbol="AAPL",
@@ -128,9 +98,9 @@ class StrategyLearner(object):
         sv=100000,
     ):  		  	   		   	 			  		 			 	 	 		 		 	
         """  		  	   		   	 			  		 			 	 	 		 		 	
-        Tests your learner using data outside of the training data  		  	   		   	 			  		 			 	 	 		 		 	
+        Tests learner using data outside of the training data  		  	   		   	 			  		 			 	 	 		 		 	
   		  	   		   	 			  		 			 	 	 		 		 	
-        :param symbol: The stock symbol that you trained on on  		  	   		   	 			  		 			 	 	 		 		 	
+        :param symbol: The stock symbol that you trained on 		  	   		   	 			  		 			 	 	 		 		 	
         :type symbol: str  		  	   		   	 			  		 			 	 	 		 		 	
         :param sd: A datetime object that represents the start date, defaults to 1/1/2010  		  	   		   	 			  		 			 	 	 		 		 	
         :type sd: datetime  		  	   		   	 			  		 			 	 	 		 		 	
@@ -173,9 +143,6 @@ class StrategyLearner(object):
 
         return df_trades
   		  	   		   	 			  		 			 	 	 		 		 	
-def author():
-    return 'lsu63'
-
 
 if __name__ == "__main__":  		  	   		   	 			  		 			 	 	 		 		 	
     print("This is Strategy Learner")
