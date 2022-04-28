@@ -1,12 +1,3 @@
-"""
-
-Project 8: Strategy Evaluation - Experiment 2
-Student Name: Linna Su
-GT User ID: lsu63
-GT ID: 903640548
-
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -68,10 +59,6 @@ def comparePerf(df_combined, verbose = False):
 		results.loc['Mean of daily returns', :] = round(avg_daily_ret1, 4), round(avg_daily_ret2, 4), round(avg_daily_ret3, 4), round(avg_daily_ret4, 4)
 		print(results)
 		print('-------------------------------------------------------------------------------------------')
-
-
-def author():
-	return 'lsu63'
 
 
 if __name__ == "__main__":
