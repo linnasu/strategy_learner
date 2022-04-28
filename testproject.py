@@ -1,12 +1,3 @@
-"""
-
-Project 8: Strategy Evaluation - Test Project
-Student Name: Linna Su
-GT User ID: lsu63
-GT ID: 903640548
-
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -30,9 +21,6 @@ def benchMark(symbol, sd, ed):
 
     return df_trades
 
-
-def author():
-    return 'lsu63'
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
